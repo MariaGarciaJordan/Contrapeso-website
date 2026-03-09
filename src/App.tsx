@@ -9,16 +9,16 @@ import { ValuesSection } from './sections/ValuesSection'
 function App() {
   return (
     <div className="min-h-screen bg-brand-piedra text-brand-negro">
-      <header className="fixed left-0 right-0 top-0 z-30">
+      <header className="absolute left-0 right-0 top-0 z-30">
         <Container className="flex items-center justify-between py-5">
           <a
             href="#top"
-            className="font-display text-3xl uppercase tracking-brand text-brand-blanco drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
+            className="font-display text-3xl tracking-brand text-brand-blanco drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
           >
             Contrapeso
           </a>
 
-          <nav className="hidden gap-5 text-xs uppercase tracking-[0.16em] text-brand-blanco/78 md:flex">
+          <nav className="hidden gap-5 text-[11px] uppercase tracking-[0.16em] text-brand-blanco/82 md:flex">
             <a href="#manifiesto" className="transition hover:text-brand-pasto">
               Manifiesto
             </a>

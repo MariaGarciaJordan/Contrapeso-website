@@ -61,3 +61,49 @@ select {
   background: var(--color-azulete);
   color: var(--color-blanco);
 }
+
+.granite-overlay {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.16) 0 1px, transparent 1px),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px),
+    radial-gradient(circle at 35% 70%, rgba(255, 255, 255, 0.1) 0 1px, transparent 1px),
+    radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px);
+  background-size: 22px 22px, 28px 28px, 18px 18px, 32px 32px;
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
+
+.hero-fracture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      112deg,
+      rgba(240, 239, 234, 0.98) 0%,
+      rgba(240, 239, 234, 0.98) 27%,
+      rgba(240, 239, 234, 0.15) 27.7%,
+      rgba(240, 239, 234, 0.08) 29.2%,
+      transparent 31%
+    );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-fracture > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 1023px) {
+  .hero-fracture::before {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(240, 239, 234, 0.92) 0%,
+        rgba(240, 239, 234, 0.92) 19%,
+        rgba(240, 239, 234, 0.1) 22%,
+        transparent 26%
+      );
+  }
+}
