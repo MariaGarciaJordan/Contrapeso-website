@@ -9,26 +9,26 @@ import { ValuesSection } from './sections/ValuesSection'
 function App() {
   return (
     <div className="min-h-screen bg-brand-piedra text-brand-negro">
-      <header className="sticky top-0 z-20 border-b border-brand-granito/15 bg-brand-piedra/90 backdrop-blur-md">
-        <Container className="flex items-center justify-between py-4">
+      <header className="fixed left-0 right-0 top-0 z-30">
+        <Container className="flex items-center justify-between py-5">
           <a
             href="#top"
-            className="font-display text-3xl uppercase tracking-brand text-brand-azulete"
+            className="font-display text-3xl uppercase tracking-brand text-brand-blanco drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]"
           >
             Contrapeso
           </a>
 
-          <nav className="hidden gap-5 text-xs uppercase tracking-[0.16em] text-brand-negro/70 md:flex">
-            <a href="#manifiesto" className="transition hover:text-brand-azulete">
+          <nav className="hidden gap-5 text-xs uppercase tracking-[0.16em] text-brand-blanco/78 md:flex">
+            <a href="#manifiesto" className="transition hover:text-brand-pasto">
               Manifiesto
             </a>
-            <a href="#propuesta" className="transition hover:text-brand-azulete">
+            <a href="#propuesta" className="transition hover:text-brand-pasto">
               Propuesta
             </a>
-            <a href="#experiencia" className="transition hover:text-brand-azulete">
+            <a href="#experiencia" className="transition hover:text-brand-pasto">
               Experiencia
             </a>
-            <a href="#contacto" className="transition hover:text-brand-azulete">
+            <a href="#contacto" className="transition hover:text-brand-pasto">
               Contacto
             </a>
           </nav>
