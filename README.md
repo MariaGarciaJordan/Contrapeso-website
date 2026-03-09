@@ -44,3 +44,19 @@ Construir una landing moderna, dinámica y alineada con el manual de marca de Co
 
 Base técnica inicial lista.
 Contenido y assets todavía en fase provisional.
+
+
+## License
+
+Copyright © 2026 Contrapeso.
+All rights reserved.
+
+This repository and its contents are proprietary and may not be used, copied, modified or distributed without explicit permission.
+
+
+## License
+
+Copyright © 2026 Contrapeso.
+All rights reserved.
+
+This repository and its contents are proprietary and may not be used, copied, modified or distributed without explicit permission.
