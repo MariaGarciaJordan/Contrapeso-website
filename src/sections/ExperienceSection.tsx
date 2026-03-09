@@ -1,5 +1,6 @@
 import { Container } from '../components/layout/Container'
 import { heroImages } from '../lib/hero-images'
+import { useParallaxOffset } from '../lib/useParallaxOffset'
 
 const moments = [
   {
@@ -20,6 +21,8 @@ const moments = [
 ]
 
 export function ExperienceSection() {
+  const offsetY = useParallaxOffset(0.04, 24)
+
   return (
     <section id="experiencia" className="bg-brand-negro text-brand-blanco">
       <Container className="py-16 md:py-20 lg:py-24">
@@ -63,9 +66,10 @@ export function ExperienceSection() {
 
             <div className="mt-6 overflow-hidden rounded-brand border border-brand-blanco/10">
               <img
-                src={heroImages.secondaryTop}
+                src={heroImages.detail}
                 alt="Escena visual de Contrapeso"
-                className="h-56 w-full object-cover object-center sm:h-72 lg:h-80"
+                className="h-[15rem] w-full object-cover object-center sm:h-[18rem] lg:h-[20rem]"
+                style={{ transform: `translate3d(0, ${offsetY}px, 0) scale(1.02)` }}
               />
             </div>
           </div>

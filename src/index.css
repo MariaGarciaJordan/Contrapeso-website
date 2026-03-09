@@ -107,3 +107,67 @@ select {
       );
   }
 }
+
+.hero-bg-parallax {
+  will-change: transform;
+  transition: transform 120ms linear;
+}
+
+.hero-soft-haze {
+  background:
+    radial-gradient(circle at 22% 32%, rgba(240, 239, 234, 0.18) 0%, transparent 24%),
+    radial-gradient(circle at 76% 18%, rgba(240, 239, 234, 0.08) 0%, transparent 18%),
+    radial-gradient(circle at 60% 82%, rgba(240, 239, 234, 0.1) 0%, transparent 20%);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.hero-side-tag {
+  box-shadow: 0 10px 30px rgba(23, 30, 34, 0.16);
+}
+
+@media (max-width: 1023px) {
+  .hero-side-tag {
+    transform: none !important;
+  }
+}
+
+.hero-copy-panel {
+  box-shadow: 0 24px 60px rgba(23, 30, 34, 0.22);
+}
+
+.hero-bg-parallax {
+  will-change: transform;
+  transition: transform 90ms linear;
+}
+
+.hero-copy-panel {
+  box-shadow: 0 24px 60px rgba(23, 30, 34, 0.18);
+}
+
+.hero-bg-parallax {
+  will-change: transform;
+  transition: transform 140ms linear;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.hero-copy-panel {
+  box-shadow: 0 24px 60px rgba(23, 30, 34, 0.14);
+}
+
+.hero-bg-parallax {
+  will-change: transform;
+  transition: transform 180ms linear;
+}
