@@ -2,13 +2,15 @@ import { Container } from './components/layout/Container'
 import { ContactSection } from './sections/ContactSection'
 import { ExperienceSection } from './sections/ExperienceSection'
 import { HeroSection } from './sections/HeroSection'
+import { ManifestoSection } from './sections/ManifestoSection'
 import { ProposalSection } from './sections/ProposalSection'
+import { ValuesSection } from './sections/ValuesSection'
 
 function App() {
   return (
     <div className="min-h-screen bg-brand-piedra text-brand-negro">
-      <header className="border-b border-brand-granito/20">
-        <Container className="flex items-center justify-between py-5">
+      <header className="sticky top-0 z-20 border-b border-brand-granito/15 bg-brand-piedra/90 backdrop-blur-md">
+        <Container className="flex items-center justify-between py-4">
           <a
             href="#top"
             className="font-display text-3xl uppercase tracking-brand text-brand-azulete"
@@ -16,7 +18,10 @@ function App() {
             Contrapeso
           </a>
 
-          <nav className="hidden gap-6 text-sm md:flex">
+          <nav className="hidden gap-5 text-xs uppercase tracking-[0.16em] text-brand-negro/70 md:flex">
+            <a href="#manifiesto" className="transition hover:text-brand-azulete">
+              Manifiesto
+            </a>
             <a href="#propuesta" className="transition hover:text-brand-azulete">
               Propuesta
             </a>
@@ -32,8 +37,12 @@ function App() {
 
       <main id="top">
         <HeroSection />
+        <div id="manifiesto">
+          <ManifestoSection />
+        </div>
         <ProposalSection />
         <ExperienceSection />
+        <ValuesSection />
         <ContactSection />
       </main>
     </div>
