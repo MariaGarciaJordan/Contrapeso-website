@@ -171,3 +171,27 @@ html.lenis body {
   will-change: transform;
   transition: transform 180ms linear;
 }
+
+.hero-copy-panel {
+  box-shadow: 0 24px 60px rgba(23, 30, 34, 0.12);
+}
+
+.hero-bg-parallax {
+  will-change: transform;
+  transition: transform 140ms linear;
+}
+
+.hero-copy-panel {
+  box-shadow: 0 24px 60px rgba(23, 30, 34, 0.12);
+}
+
+.hero-bg-parallax {
+  will-change: transform;
+  transition: transform 120ms linear;
+}
+
+@media (max-width: 1023px) {
+  .hero-bg-parallax {
+    transition: transform 160ms linear;
+  }
+}
